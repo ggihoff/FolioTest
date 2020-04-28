@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i|Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/abec1cde80.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Gustavo Iglesias - Portfolio</title>
+  </head>
+  <body id="home">
+    <!--<div class="containspinner" id="spinner">
+  <div class="loadingspinner">
+  </div> //-->
+
+    <header>
+      <nav id="navigation">
+        <div class="navCont">
+          <ul id="menu">
+            <!--  <div class="input">
+                    <p>ES</p>
+                    <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+                    <p>EN</p>
+                 </div>//-->
+                 <a href="#home" class="scroll"><li>Home</li></a> 
+            <a href="#cards" class="scroll" onclick="hamburguer()"
+              ><li>Ultimos proyectos</li></a
+            >
+            <li>Skills</li>
+          </ul>
+          <div class="hamburger" onclick="hamburguer()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </nav>
+      
+    </header>
+    <ul class="left-social">
+      <li><i class="fab fa-github"></i></li>
+      <li><i class="fab fa-linkedin-in"></i></li>
+    </ul>
+    <ul class="right-social">
+      <a
+        href="mailto:ggihoff@gmail.com"
+        class="email__StyledEmailLink-sc-2epoq-1 jxlTta"
+        >ggihoff@gmail.com</a
+      >
+    </ul>
+    <main>
+      <div class="textCont">
+        <div class="principal">Gustavo Iglesias.</div>
+        <div class="secundario">
+          Desarrollador Junior Front end ubicado en Cordoba.
+        </div>
+        <div>
+          <a href="#contact" class="scroll"><button class="btn-text">Contacto</button></a>
+        </div>
+      </div>
+      <div id="jacanvas"></div>
+
+      <svg
+        width="25px"
+        height="50px"
+        viewBox="0 0 247 390"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"
+      >
+        <path
+          id="wheel"
+          d="M123.359,79.775l0,72.843"
+          style="fill:none;stroke:#ff0015;stroke-width:20px;"
+        />
+        <path
+          id="mouse"
+          d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z"
+          style="fill:none;stroke:#fff;stroke-width:20px;"
+        />
+      </svg>
+    </main>
+    <div id="cards" class="container">
+      <h1 class="title1">Ultimos proyectos</h1>
+      <section class="cards">
+        <article class="card card--1">
+          <div class="card__img"></div>
+          <a href="#" class="card_link"> 
+            <div class="card__img--hover"></div>
+          </a>
+          <div class="card__info">
+            <span class="card__category">REACT JS</span>
+            <h3 class="card__title">Covid-19 Comparador y graficos</h3>
+            <div class="botones">
+            <a href="https://covidcompare.netlify.app/" target="_blank"><button><i class="far fa-eye"></i> Ver</button></a>
+              <a href="https://github.com/ggihoff/CovidCompare"><button><i class="fas fa-code"></i> Code</button></a>
+            </div>
+          </div>
+      
+        </article>
+
+        <article class="card card--2">
+          <div class="card__img"></div>
+          <a href="#" class="card_link">
+            <div class="card__img--hover"></div>
+          </a>
+          <div class="card__info">
+            <span class="card__category">HTML, CSS, REACT HOOKS</span>
+            <h3 class="card__title">Verificar primeros seguidores twitch</h3>
+            <div class="botones">
+              <a href="https://checkoldestfollower.netlify.app/"><button><i class="far fa-eye"></i> Ver</button></a>
+              <a href="https://github.com/ggihoff/TwitchOldestFollower"><button><i class="fas fa-code"></i> Code</button></a>
+            </div>
+          </div>
+    
+        </article>
+
+        <article class="card card--3">
+          <div class="card__img"></div>
+          <a href="#" class="card_link">
+            <div class="card__img--hover"></div>
+          </a>
+          <div class="card__info">
+            <span class="card__category">MERN STACK</span>
+            <h3 class="card__title">Billetera virtual, presupusto y gastos</h3>
+            <div class="botones">
+              <button><i class="far fa-eye"></i> Ver</button>
+              <button><i class="fas fa-code"></i> Code</button>
+            </div>
+          </div>
+    
+        </article>
+      </section>
+      <section id="contact" class="skills">
+    
+        <h1 class="title2">Contacto</h1>
+        <form class="form">
+          <input type="text" placeholder="Nombre">
+          <input type="text" placeholder="Email">
+          <div class="message">
+            
+            <textarea  placeholder="Mensaje" cols="30" rows="5" required></textarea>
+          </div>
+          <button class="sendForm">Enviar</button>
+        </form>
+ </div>
+     </section>
+    </div>
+
+    <script src="js/three.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="https://threejs.org/examples/js/controls/TrackballControls.js"></script>
+    <script>
+
+
+    if($(window).width() > 1024) {
+  
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;  
+      const menu = document.getElementById("navigation");
+      
+        if (prevScrollpos > currentScrollPos) {
+          menu.classList.add("sube")
+          menu.classList.remove("baja")
+        } else {
+          if(currentScrollPos > 200) {
+          menu.classList.add("baja")
+          }
+          menu.classList.remove("sube")
+        }
+        if(currentScrollPos == 0) {
+          menu.classList.remove("baja")
+          menu.classList.remove("sube")
+        }
+        prevScrollpos = currentScrollPos;
+      }
+    }
+
+    
+      function hamburguer() {
+              console.log("hola")
+              if($(window).width() <= 700)
+      {
+        const menu = document.getElementById("menu");
+              menu.classList.toggle("visible");
+      } 
+       
+      }
+      
+
+      if (window.matchMedia("(min-width: 600px)").matches) {
+        if (window.matchMedia("(min-width: 1500px)").matches) {
+
+          var tamaño = 250;
+        }
+        else {
+          var tamaño = 200;
+        }
+       
+        
+      } else {
+        var tamaño = 90;
+       
+      }
+
+      var scene = new THREE.Scene();
+      var camera = new THREE.PerspectiveCamera(60, tamaño / tamaño, 0.1, 1000);
+      var renderer = new THREE.WebGLRenderer({
+        antialias: true
+      });
+
+      renderer.setSize(tamaño, tamaño);
+      renderer.setClearColor(0x081014, 1);
+
+      const divi = document.getElementById("jacanvas");
+      divi.appendChild(renderer.domElement);
+      ///////////////////////////////////////////////
+
+      // Camera
+      scene.add(camera);
+      camera.position.z = 200;
+
+      var pinkMat = new THREE.MeshPhongMaterial({
+        color: new THREE.Color("#99080f"),
+        emissive: new THREE.Color("#e30072"),
+        specular: new THREE.Color("#ffe100"),
+        emissiveIntensity: 0.2,
+        shininess: 10,
+        shading: THREE.FlatShading,
+        transparent: 1,
+        opacity: 1,
+        pixelRatio: 1
+      });
+
+      pointLight = new THREE.PointLight(0xffffff, 0.6);
+      pointLight.position.set(1, 50, 1);
+      camera.add(pointLight);
+
+      pointLight2 = new THREE.PointLight(0xffffff, 0.3);
+      pointLight2.position.set(50, -100, 1);
+      camera.add(pointLight2);
+
+      // IcoSphere -> THREE.IcosahedronGeometry(80, 1) 1-4
+      var Ico = new THREE.Mesh(new THREE.IcosahedronGeometry(100, 1), pinkMat);
+      Ico.rotation.z = 1;
+      scene.add(Ico);
+      var trackballControl = new THREE.TrackballControls(
+        camera,
+        renderer.domElement
+      );
+      trackballControl.rotateSpeed = 1.0; // need to speed it up a little
+      trackballControl.noZoom = true;
+
+      function update() {
+        Ico.rotation.y += 1.5 / 100;
+        Ico.rotation.x += 1.5 / 100;
+      }
+
+      function render() {
+        trackballControl.update();
+        requestAnimationFrame(render);
+        renderer.render(scene, camera);
+        renderer.setPixelRatio(window.devicePixelRatio);
+        const canvas = renderer.domElement;
+        camera.aspect = canvas.clientWidth / canvas.clientHeight;
+        camera.updateProjectionMatrix();
+
+        update();
+      }
+
+      render();
+    </script>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
