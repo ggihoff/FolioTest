@@ -1,7 +1,7 @@
 
 <?php
 
-echo "hi";
+
 
 if(isset($_POST['submit'])) {
     $name = $_POST['name'];
@@ -14,9 +14,20 @@ if(isset($_POST['submit'])) {
     $headers  = 'MIME-Version: 1.0' . "\r\n";
     $headers .= 'Content-type:text/html; charset=UTF-8' . "\r\n";
     $headers .= "From: ".$mail;
-    $txt = "Recibiste un mail de ".$name.".\n\n".$message;
-    mail($to, $subject, $txt, $headers);
-    echo "hi";
+    $body = "Recibiste un mail de ".$name.".\n\n".$message;
+    mail($to, $subject, $body, $headers);
+    
+
+    if (mail($to, $subject, $body, $headers)) {
+        echo("
+           Message successfully sent!
+        ");
+    }
+    else {
+        echo("
+           Message delivery failed...
+        ");
     header("Location: index.php?mailsend");
 
 } 
+?>
