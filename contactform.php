@@ -1,13 +1,20 @@
 
 <?php
 
-ini_set('display_errors', 1);
-echo "hiasas";
-if(isset($_POST['submit'])) {
-    
-    console.log("hola");
-    
+    echo "hola";
 
-    header("Location: index.php");
+    echo "holainside";
+    $name = $_POST['name'];
+    $subject = 'trabajo';
+    $mail = $_POST['mail'];
+    $message = $_POST['message'];  
+    $youremail = 'gustavoiglesias_04@hotmail.com';
+    $to = $youremail;
+    $headers  = 'MIME-Version: 1.0' . "\r\n";
+    $headers .= 'Content-type:text/html; charset=UTF-8' . "\r\n";
+    $headers .= "From: ".$mail;
+    $body = "Recibiste un mail de ".$name.".\n\n".$message;
+    mail($to, $subject, $body, $headers);
+    
+    header("Location: index.php?mailsend");
 
-} 
