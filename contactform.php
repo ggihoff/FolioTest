@@ -15,6 +15,7 @@ if(isset($_POST['submit'])) {
     $headers .= "From: ".$mail;
     $txt = "Recibiste un mail de ".$name.".\n\n".$message;
     mail($to, $subject, $txt, $headers);
-
+echo "hi";
     header("Location: index.php?mailsend");
+
 } 
