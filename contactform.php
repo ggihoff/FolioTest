@@ -1,6 +1,7 @@
 
 <?php
 
+echo "hi";
 
 if(isset($_POST['submit'])) {
     $name = $_POST['name'];
@@ -15,7 +16,7 @@ if(isset($_POST['submit'])) {
     $headers .= "From: ".$mail;
     $txt = "Recibiste un mail de ".$name.".\n\n".$message;
     mail($to, $subject, $txt, $headers);
-echo "hi";
+    echo "hi";
     header("Location: index.php?mailsend");
 
 } 
