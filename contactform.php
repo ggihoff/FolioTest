@@ -5,7 +5,9 @@
 
 if(isset($_POST['submit'])) {
     
-    header("Location: index.php?mailsend");
+    console.log("hola")
+    
+
+    header("Location: index.php");
 
 } 
-?>
