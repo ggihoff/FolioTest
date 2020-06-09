@@ -24,7 +24,6 @@ html {
   height: 100%;
 }
 
-
 body {
   font-family: antipastopro-demibold;
   background-color: #060606;
@@ -121,11 +120,13 @@ li:hover {
 a {
   text-decoration: none;
 }
+
 ul.visible {
   position: absolute;
   top: 0px;
   left: 0px;
 }
+
 ul.visible body {
   overflow: hidden;
 }
@@ -233,7 +234,7 @@ main {
   text-decoration: none;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   letter-spacing: 1px;
-  font-size: 14px;
+  font-size: 14px; 
   font-family: sofiapro;
 }
 
@@ -648,7 +649,6 @@ p,
 }
 
 .proyectos {
-  
   padding: 20px 50px;
   width: 100%;
   background-color: transparent;
@@ -667,7 +667,6 @@ p,
   }
   .sobreText {
     padding: 0px;
-    
   }
 }
 /*SKILLS////////////////////////////////////////////////////////////////////////////////*/
@@ -780,7 +779,7 @@ button {
   margin: auto;
   text-align: center;
   font-size: 20px;
-  padding:  30px 50px;
+  padding: 30px 50px;
   line-height: 40px;
   color: rgb(156, 156, 156);
 }
@@ -970,7 +969,7 @@ footer {
   }
   .skills {
     height: 850px;
-  
+
     position: relative;
   }
   .form {
@@ -982,19 +981,19 @@ footer {
     transform: translateY(20%);
     transition: 1s ease;
   }
-  
-input[type="text"],textarea {
-  padding-bottom: 10px;
-  margin: 20px auto 30px auto;
 
-  font-size: 18px;
- 
-}
+  input[type="text"],
+  textarea {
+    padding-bottom: 10px;
+    margin: 20px auto 30px auto;
 
-.sendForm {
-  margin-top: 20px;
-  padding: 20px 95px;
-}
+    font-size: 18px;
+  }
+
+  .sendForm {
+    margin-top: 20px;
+    padding: 20px 95px;
+  }
 }
 @media (max-width: 1100px) {
   .left-social {
@@ -1038,7 +1037,6 @@ input[type="text"],textarea {
   .card-container {
     max-width: 350px;
   }
-
 }
 
 @media (max-width: 500px) {
@@ -1076,7 +1074,10 @@ input[type="text"],textarea {
     justify-content: center;
     text-align: center;
   }
-  html, body { height: 100% } 
+  html,
+  body {
+    height: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1153,8 +1154,8 @@ input[type="text"],textarea {
   }
 }
 
-@media (max-width: 340px) { 
-.habs-container {
-  padding: 0px;
-}
+@media (max-width: 340px) {
+  .habs-container {
+    padding: 0px;
+  }
 }
