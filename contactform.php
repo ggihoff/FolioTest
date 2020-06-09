@@ -64,7 +64,7 @@
     }
 
     $mail->smtpClose();
-   header("Location: index.php");
+
     }
     else {
         echo "no submit";
