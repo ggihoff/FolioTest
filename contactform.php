@@ -41,7 +41,11 @@
     //Username to use for SMTP authentication - use full email address for gmail
     $mail->Username = "ggihoff@gmail.com";
     //Password to use for SMTP authentication
-    $mail->Password = "42604100";
+    $my_env_var = getenv('p');
+
+    $mail->Password = $my_env_var;
+
+    echo $my_env_var;
     //Set who the message is to be sent from
     $mail->setFrom('mabelhoffmann@gmail.com', $name);
     //Set an alternative reply-to address
@@ -64,8 +68,9 @@
     }
 
     $mail->smtpClose();
-   header("Location: index.php");
+   
     }
     else {
         echo "no submit";
+      
     }
