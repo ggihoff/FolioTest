@@ -30,6 +30,7 @@ body {
   color: white;
   height: 100%;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .hamburger {
@@ -175,6 +176,10 @@ ul.visible body {
   form {
     width: 70%;
   }
+ .cards {
+   flex-direction: column;
+    align-items: center;
+ }
 }
 
 /*MAIN////////////////////////////////////////////////////////////////////////////////*/
@@ -393,28 +398,28 @@ label:active:after {
   border: 1px solid white;
   border-radius: 25px;
 }
-.containspinner {
-  width: 100%;
-  height: 100%;
-  background-color: rgb(2, 39, 59);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.spinner-container{
   position: absolute;
   top: 0;
   bottom: 0;
-  z-index: 1;
-  transition: 0.5s ease;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(8, 8, 8);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  z-index: 100;
+
 }
-.loadingspinner {
+.loading-spinner {
   pointer-events: none;
   width: 2.5em;
   height: 2.5em;
   border: 0.4em solid transparent;
-  border-color: #eee;
-  border-top-color: rgb(16, 255, 175);
+  border-color: rgb(46, 45, 45);
+  border-top-color: rgb(241, 62, 56);
   border-radius: 50%;
-
+z-index: 110;
   animation: loadingspin 1s linear infinite;
 }
 
@@ -650,6 +655,8 @@ p,
 
 .proyectos {
   padding: 20px 50px;
+ display: block;
+ 
   width: 100%;
   background-color: transparent;
   color: rgb(238, 238, 238);
@@ -1115,7 +1122,9 @@ footer {
   main {
     width: 80%;
   }
-
+.cards {
+  flex-direction: row;
+}
   .principal {
     font-size: 30px;
     margin-bottom: 20px;

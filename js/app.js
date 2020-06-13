@@ -1,4 +1,15 @@
 $(document).ready(function() {
+
+ 
+    $(".spinner-container").fadeTo( "slow" , 0, function() {
+
+
+  
+    $('.spinner-container').hide();
+    });
+
+    document.getElementById("home").style.overflowY = "scroll";
+
     var scrollLink = $(".scroll");
   
     // Smooth scrolling

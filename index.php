@@ -23,10 +23,9 @@
     <title>Gustavo Iglesias - Portfolio</title>
   </head>
   <body id="home">
-    <!--<div class="containspinner" id="spinner">
-  <div class="loadingspinner">
-  </div> //-->
-
+  <div class="spinner-container">
+  <div class="loading-spinner"></div>
+</div>
     <header>
       <nav id="navigation">
         <div class="navCont">
@@ -247,7 +246,7 @@
         var tamaño = 110;
       }
       else if (window.matchMedia("(min-width: 300px)").matches) {
-        var tamaño = 90;
+        var tamaño = 85;
       }
 
  
